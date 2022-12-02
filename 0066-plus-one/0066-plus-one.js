@@ -11,6 +11,8 @@ var plusOne = function(digits) {
         if (digits[pointer] >= 10) {
             digits[pointer] = 0
             digits[pointer - 1] += 1
+        } else {
+            break
         }
     pointer--
     }
