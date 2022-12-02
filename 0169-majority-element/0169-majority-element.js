@@ -8,7 +8,10 @@ var majorityElement = function(nums) {
     //     counter[nums[i]] = (counter[nums[i]] || 0) + 1
     //     if (counter[nums[i]] > nums.length/2) return nums[i]
     // }
-    let sortedArray = nums.sort()
-    return sortedArray[Math.floor(sortedArray.length/2)]    
+    
+    return nums.sort()[Math.floor(nums.length/2)]
+    // return sortedArray[Math.floor(sortedArray.length/2)]    
+    
+    
     
 };
