@@ -16,6 +16,7 @@ var countCharacters = function(words, chars) {
 				continue
 			} else {
 				validLetter = false
+                break
 			}
 		}
 		if (validLetter) sum += letter.length
