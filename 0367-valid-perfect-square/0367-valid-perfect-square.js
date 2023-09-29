@@ -3,10 +3,10 @@
  * @return {boolean}
  */
 var isPerfectSquare = function(num) {
-  let result = 1
-  while(result*result <= num){
-    if (result*result === num) return true
-      result++
-  }
-  return false
+    let i = 1;
+     while (num > 0) {
+         num -= i;
+         i += 2;
+     }
+     return num == 0;
 };
