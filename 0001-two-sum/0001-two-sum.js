@@ -4,8 +4,11 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
+    let foundIdx;
+    let difference;
     for(let i = 0; i < nums.length; i++){
-        let foundIdx = nums.indexOf(target - nums[i], i+1)
-        if( foundIdx !== -1) return [i, foundIdx] 
+        difference = target - nums[i]
+        foundIdx = nums.indexOf(difference, i+1)
+        if(foundIdx !== -1) return [i, foundIdx] 
     }
 };
