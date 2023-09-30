@@ -63,7 +63,7 @@ var addTwoNumbers = function(l1, l2) {
     var sum = 0;
     var carry = 0;
 
-    while(l1!==null||l2!==null||sum>0){
+    while(l1 || l2 || sum>0){
 
         if(l1!==null){
             sum = sum + l1.val;
