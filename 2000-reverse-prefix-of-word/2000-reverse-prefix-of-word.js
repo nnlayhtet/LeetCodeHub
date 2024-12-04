@@ -8,9 +8,8 @@ var reversePrefix = function(word, ch) {
     if (index === -1) {
         return word
     }
-    let firstPart = word.slice(0, index)
+    let firstPart = word.slice(0, index).split("").reverse().join("")
     let secondPart = word.slice(index + 1)
-    firstPart = firstPart.split("").reverse().join("")
     return ch + firstPart + secondPart
     
 };
